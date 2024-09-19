@@ -24,4 +24,4 @@ To run the calculator locally, follow these steps:
 
 ### Step 1: Clone the repository
 ```bash
-git clone https://github.com/MoSalem149v2/calculator-web-app_CodeSoft-Level_1-Task_1-Project.git
+git clone https://github.com/MoSalem149/calculator-web-app_CodeSoft-Level_1-Task_1-Project.git
