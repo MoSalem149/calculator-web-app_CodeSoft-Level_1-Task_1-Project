@@ -1,0 +1,128 @@
+/* Rest Page Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #111722;
+  font-family: "Manrope", sans-serif;
+}
+
+/* Calculator Container Style */
+.calc-container {
+  background-color: #1e2232;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  width: 90vw;
+  max-width: 320px;
+}
+
+/* Calculator Input Screen Style */
+.calc-screen {
+  width: 100%;
+  height: 60px;
+  background-color: #344465;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  text-align: right;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+/* Calculator Buttons Style */
+.calc-btns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button:active {
+  transform: scale(0.95);
+  transition: transform 0.1s ease-in-out;
+}
+
+button {
+  width: 100%;
+  padding: 20px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #243047;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s ease-in-out;
+}
+
+button:hover {
+  background-color: #195de6;
+}
+
+button[value="C"] {
+  background-color: #ff5c5c;
+}
+
+button[value="="] {
+  background-color: #195de6;
+}
+
+/* Media Queries for Responsive Desgin */
+/* for MobileScreen */
+@media screen and (max-width: 600px) {
+  .calc-container {
+    width: 95vw;
+    max-width: 400px;
+  }
+
+  .calc-screen {
+    font-size: 1.75rem;
+    height: 50px;
+  }
+
+  button {
+    padding: 15px;
+    font-size: 1.25rem;
+  }
+}
+
+/* for Tablets Screen */
+@media screen and (max-width: 768px) {
+  .calc-container {
+    width: 80vw;
+    max-width: 450px;
+  }
+
+  .calc-screen {
+    font-size: 1.85rem;
+    height: 55px;
+  }
+
+  button {
+    padding: 18px;
+    font-size: 1.3rem;
+  }
+}
+
+/* for Desktops Screen */
+@media screen and (max-width: 1024px) {
+  .calc-container {
+    width: 320px;
+  }
+
+  .calc-screen {
+    height: 60px;
+  }
+
+  button {
+    font-size: 1.5rem;
+    padding: 20px;
+  }
+}
